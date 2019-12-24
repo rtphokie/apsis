@@ -1,3 +1,4 @@
+#! /usr/bin/env python3
 import unittest
 from skyfield.api import load
 from pprint import pprint
