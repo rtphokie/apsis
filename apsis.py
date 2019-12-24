@@ -135,5 +135,7 @@ class Test(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
+    # unittest.main()
     uut = next_apsides(ts.now(), body1='Earth', body2='Sun')
+    for x in ['nearest', 'furthest']:
+        print (f'Next {uut[x]["description"]} {uut[x]["date"].strftime("%c")} ({int(round(uut[x]["distance_km"])):,} km)')
